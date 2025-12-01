@@ -3,22 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Portfolio</title>
+    <title>Jane Doe - Professional Portfolio</title>
     <link rel="stylesheet" href="style.css"> 
-</head>
+    <link rel="icon" href="images/favicon.ico"> </head>
 <body>
-    <header><h1>[Your Name]</h1></header>
-    <main>
-        <section id="about">
-            <h2>Background</h2>
-            </section>
-        <section id="experience">
-            <h2>Work Experience & Education</h2>
-            </section>
-        <section id="projects">
-            <h2>Technical Projects</h2>
-            </section>
+
+    <header class="hero">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Professional headshot of Jane Doe" class="profile-pic">
+            <h1>Jane Doe</h1>
+            <p class="subtitle">Future Software Developer | Computer Science Student | Problem Solver</p>
+            <nav>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <ul>
+                    <li>**Programming Languages:** Python, JavaScript, Java, C++</li>
+                    <li>**Web Technologies:** HTML5, CSS3, React, Node.js</li>
+                </ul>
+                <ul>
+                    <li>**Databases:** SQL, MongoDB</li>
+                    <li>**Tools & Platforms:** Git, GitHub, Docker, AWS (Basic)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience & Education</h2>
+
+            <article class="timeline-item">
+                <h3>B.S. Computer Science | [University Name]</h3>
+                <p class="date">Expected Graduation: May 2026</p>
+                <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems.</p>
+            </article>
+
+            <article class="timeline-item">
+                <h3>Summer Intern | [Company Name]</h3>
+                <p class="date">May 2025 - Aug 2025</p>
+                <ul>
+                    <li>Assisted senior developers in debugging and testing new features.</li>
+                    <li>Developed internal tool using Python to automate [Specific Task].</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Featured Technical Projects</h2>
+
+            <article class="project-card">
+                <h3>1. E-commerce Backend API</h3>
+                <p>Designed and built a RESTful API for an online store using Node.js and Express. Implemented secure user authentication and product inventory management.</p>
+                <p class="tech-used">**Technologies:** Node.js, Express, MongoDB, JWT</p>
+                <a href="[Live Demo URL]" target="_blank">View Demo</a> | 
+                <a href="[GitHub Repo URL]" target="_blank">GitHub Repo</a>
+            </article>
+
+            <article class="project-card">
+                <h3>2. Data Visualization Dashboard</h3>
+                <p>Created a dynamic dashboard using React to display real-time sensor data. Utilized D3.js for interactive charting and data filtering.</p>
+                <p class="tech-used">**Technologies:** React, D3.js, Firebase</p>
+                <a href="[Live Demo URL]" target="_blank">View Demo</a> | 
+                <a href="[GitHub Repo URL]" target="_blank">GitHub Repo</a>
+            </article>
+
+        </section>
+
     </main>
-    <footer></footer>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+            <p>Connect with me:</p>
+            <a href="mailto:jane.doe@email.com">Email</a> |
+            <a href="[LinkedIn URL]" target="_blank">LinkedIn</a> |
+            <a href="[GitHub URL]" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
 </body>
 </html>

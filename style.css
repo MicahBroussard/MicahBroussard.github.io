@@ -1,1 +1,181 @@
+/* Basic Reset and Variables */
+:root {
+    --primary-color: #007bff; /* Professional blue/accent color */
+    --secondary-color: #f8f9fa; /* Light background for sections */
+    --text-color: #333;
+    --bg-color: #fff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Global Container for Centering Content */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header/Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 10px 0 5px;
+    font-size: 2.5em;
+}
+
+.hero .subtitle {
+    margin-bottom: 20px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content Sections */
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-grid li {
+    padding: 5px 0;
+}
+
+/* Experience/Timeline Items */
+.timeline-item {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.timeline-item h3 {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.timeline-item .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tech-used {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Footer/Contact */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Media Queries for Responsiveness (Mobile View) */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
