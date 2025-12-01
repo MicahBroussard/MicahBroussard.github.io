@@ -3,143 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micah Broussard </title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Micah Broussard - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+    </div>
 
-    <header class="hero">
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="container">
-            <img src="images/profile.jpg" alt="Professional headshot of Micah Broussard" class="profile-pic">
-            <h1>Micah Broussard</h1>
-            <p class="subtitle">Computer Science student — problem solver with full‑stack development experience</p>
-
-            <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav>
+            <div class="logo">MB</div>
+            <div class="nav-links">
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main id="main-content" class="container">
+    <div class="content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="profile-pic-wrapper">
+                    <img src="images/profile.jpg" alt="Micah Broussard" class="profile-pic">
+                </div>
+                <h1>Micah Broussard</h1>
+                <p class="subtitle">Computer Science Student | Full-Stack Developer | Problem Solver</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
 
-        <section id="education" class="section">
+        <!-- Education -->
+        <section id="education" class="fade-in">
             <h2>Education</h2>
-            <article class="timeline-item">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p class="date">Louisiana State University — Baton Rouge, LA | May 2027</p>
-                <p>GPA: 3.78</p>
-                <p>Related coursework: Computer Science I & II, Discrete Structures, Advanced Data Structures & Algorithm Analysis, Systems Programming, Object-Oriented Design</p>
-            </article>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>B.S. in Computer Science</h3>
+                    <p class="date">Louisiana State University | May 2027 | GPA: 3.78</p>
+                    <p>Advanced coursework in data structures, algorithms, systems programming, and object-oriented design</p>
+                </div>
+            </div>
         </section>
 
-        <section id="skills" class="section">
+        <!-- Skills -->
+        <section id="skills" class="fade-in">
             <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <ul>
-                    <li><strong>Languages:</strong> C++, Java, Python, C, HTML, CSS</li>
-                    <li><strong>Skills:</strong> Debugging, troubleshooting, technical support</li>
-                </ul>
-                <ul>
-                    <li><strong>Tools & Systems:</strong> Linux, Windows, Git, CAD</li>
-                    <li><strong>Other:</strong> Adobe Photoshop, Microsoft Excel, Google Sheets</li>
-                </ul>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Systems</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Git & Version Control</li>
+                        <li>CAD</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li>Debugging & Optimization</li>
+                        <li>Technical Support</li>
+                        <li>Problem Solving</li>
+                        <li>Full-Stack Development</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        
-        <section id="experience" class="section">
-            <h2>Work Experience</h2>
 
-            <article class="timeline-item">
-                <h3>Undergraduate Computer Science Teaching Assistant</h3>
-                <p class="date">Louisiana State University | August 2024 — May 2025</p>
-                <ul>
-                    <li>Debugged and optimized student code across multiple languages, improving correctness and performance.</li>
-                    <li>Provided one-on-one instruction tailored to diverse learning styles.</li>
-                    <li>Graded assignments and gave actionable feedback to help students improve.</li>
-                </ul>
-            </article>
-
-            <article class="timeline-item">
-                <h3>Sales Associate</h3>
-                <p class="date">Office Depot | June 2025 — Present</p>
-                <ul>
-                    <li>Troubleshoot hardware and software issues for customers (printers, laptops, networking).</li>
-                    <li>Advised customers on technology solutions based on their needs.</li>
-                    <li>Consistently met or exceeded daily and weekly sales goals.</li>
-                </ul>
-            </article>
-            
-            <article class="timeline-item">
-                <h3>Online Sales Associate (Remote, Seasonal)</h3>
-                <p class="date">Phyll's Icing on the Cake | Sept 2019 — Present</p>
-                <ul>
-                    <li>Communicated with clients to clarify specifications and resolve issues.</li>
-                    <li>Coordinated logistics for order fulfillment and delivery.</li>
-                </ul>
-            </article>
+        <!-- Experience -->
+        <section id="experience" class="fade-in">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Teaching Assistant</h3>
+                    <p class="date">Louisiana State University | Aug 2024 - May 2025</p>
+                    <ul>
+                        <li>Debugged and optimized student code across multiple languages</li>
+                        <li>Provided one-on-one instruction tailored to diverse learning styles</li>
+                        <li>Delivered actionable feedback to improve student performance</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Sales Associate</h3>
+                    <p class="date">Office Depot | June 2025 - Present</p>
+                    <ul>
+                        <li>Troubleshoot hardware/software issues for customers</li>
+                        <li>Provide technology consultation and solutions</li>
+                        <li>Consistently exceed sales goals</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Online Sales Associate</h3>
+                    <p class="date">Phyll's Icing on the Cake | Sept 2019 - Present</p>
+                    <ul>
+                        <li>Manage client communications and specifications</li>
+                        <li>Coordinate logistics for order fulfillment</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Featured Technical Projects</h2>
-
-            <article class="project-card">
-                <h3>SASE Hackathon 2024 — 1st Place</h3>
-                <p>Built an interactive world map visualizing countries' alliances, conflicts, and currencies.</p>
-                <p>Delivered a working prototype within 48 hours and won first place.</p>
-                <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a> | 
-                <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-            </article>
-
-            <article class="project-card">
-                <h3>WICS Hackathon 2025 — Educational Game</h3>
-                <p>Implemented backend systems and contributed to the front-end for a browser-based educational game.</p>
-                <p>Integrated game mechanics to simulate small business operations, demonstrating full‑stack skills.</p>
-                <p class="tech-used"><strong>Technologies:</strong> Node.js, JavaScript</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a> | 
-                <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-            </article>
-
+        <!-- Projects -->
+        <section id="projects" class="fade-in">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🏆 SASE Hackathon 2024</h3>
+                    <p>Built an interactive world map visualizing countries' alliances, conflicts, and currencies. Won 1st place with a working prototype delivered in 48 hours.</p>
+                    <div>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🎮 WICS Educational Game</h3>
+                    <p>Implemented backend systems and contributed to front-end for a browser-based educational game simulating small business operations.</p>
+                    <div>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">View Demo →</a>
+                        <a href="#">GitHub →</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="honors" class="section">
+
+        <!-- Honors -->
+        <section id="honors" class="fade-in">
             <h2>Honors & Activities</h2>
-            <div class="skills-grid">
-                <ul>
-                    <li><strong>Honors:</strong> TOPS Recipient, DELF Diploma, AP Scholar</li>
-                    <li><strong>Languages:</strong> English (fluent), French (fluent)</li>
-                </ul>
-                <ul>
-                    <li><strong>Activities:</strong> National Society of Black Engineers, Google Developer Student Club</li>
-                    <li><strong>Mentorship:</strong> Robotics Team 3616 Mentor</li>
-                </ul>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Honors</h3>
+                    <ul>
+                        <li>TOPS Recipient</li>
+                        <li>DELF Diploma</li>
+                        <li>AP Scholar</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English (Fluent)</li>
+                        <li>French (Fluent)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Activities</h3>
+                    <ul>
+                        <li>National Society of Black Engineers</li>
+                        <li>Google Developer Student Club</li>
+                        <li>Robotics Team 3616 Mentor</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-    </main>
-
-    <footer id="contact">
-        <div class="container">
-            <p>Connect with me:</p>
-            <a href="mailto:micahbroussard07@gmail.com">Email</a> |
-            <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-            <a href="https://github.com/MicahBroussard" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <!-- Contact -->
+        <footer id="contact">
+            <h2>Let's Connect</h2>
+            <div class="social-links">
+                <a href="mailto:micahbroussard07@gmail.com" title="Email">✉</a>
+                <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" title="LinkedIn">in</a>
+                <a href="https://github.com/MicahBroussard" target="_blank" title="GitHub">{ }</a>
+            </div>
             <p>Baton Rouge, LA | (337) 561-2387</p>
-            <p>&copy; 2025 Micah Broussard. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+            <p style="margin-top: 2rem; color: var(--text-muted);">© 2025 Micah Broussard. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
