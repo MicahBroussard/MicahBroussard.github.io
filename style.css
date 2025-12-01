@@ -5,6 +5,8 @@
     --secondary-color: #f8f9fa; /* Light background for sections */
     --text-color: #333;
     --bg-color: #fff;
+    --focus-color: #ffbf47; /* visible focus ring color */
+    --focus-shadow: 0 0 0 6px rgba(255,191,71,0.12);
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,6 +21,61 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
+}
+
+/* Skip link (only visible on keyboard focus) */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus,
+.skip-link:active {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+/* Visible focus styles for keyboard users */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+    box-shadow: var(--focus-shadow);
+}
+
+#hamburger:focus-visible span {
+    box-shadow: 0 0 0 3px rgba(255,191,71,0.25);
+}
+
+#back-to-top:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+}
+
+/* Apply focus-visible styles to other interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+nav a:focus-visible,
+.project-card a:focus-visible,
+footer a:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+    box-shadow: var(--focus-shadow);
+    border-radius: 4px;
 }
 
 /* Global Container for Centering Content */

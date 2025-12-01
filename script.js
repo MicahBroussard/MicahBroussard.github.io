@@ -35,20 +35,22 @@ document.querySelectorAll('.section, .project-card, .timeline-item').forEach(el 
 // Back to Top Button
 const backToTopBtn = document.getElementById('back-to-top');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTopBtn.classList.add('show');
-    } else {
-        backToTopBtn.classList.remove('show');
-    }
-});
-
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
     });
-});
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 // Mobile Menu Toggle
 const hamburger = document.getElementById('hamburger');
@@ -56,15 +58,19 @@ const nav = document.querySelector('nav');
 
 if (hamburger) {
     hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
+        const isOpen = nav && nav.classList.toggle('active');
         hamburger.classList.toggle('active');
+        // Reflect state to assistive tech
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
     });
 
     // Close menu when a link is clicked
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', () => {
-            nav.classList.remove('active');
+            if (nav) nav.classList.remove('active');
             hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
         });
     });
 }

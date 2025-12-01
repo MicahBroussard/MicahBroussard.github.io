@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="hero">
         <div class="container">
@@ -14,7 +15,7 @@
             <h1>Micah Broussard</h1>
             <p class="subtitle">Computer Science student — problem solver with full‑stack development experience</p>
 
-            <button id="hamburger">
+            <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -29,7 +30,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
 
         <section id="education" class="section">
             <h2>Education</h2>
@@ -96,8 +97,8 @@
                 <p>Built an interactive world map visualizing countries' alliances, conflicts, and currencies.</p>
                 <p>Delivered a working prototype within 48 hours and won first place.</p>
                 <p class="tech-used"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                <a href="#" target="_blank">View Demo</a> | 
-                <a href="#" target="_blank">GitHub Repo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a> | 
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </article>
 
             <article class="project-card">
@@ -105,8 +106,8 @@
                 <p>Implemented backend systems and contributed to the front-end for a browser-based educational game.</p>
                 <p>Integrated game mechanics to simulate small business operations, demonstrating full‑stack skills.</p>
                 <p class="tech-used"><strong>Technologies:</strong> Node.js, JavaScript</p>
-                <a href="#" target="_blank">View Demo</a> | 
-                <a href="#" target="_blank">GitHub Repo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a> | 
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </article>
 
         </section>
@@ -131,14 +132,14 @@
         <div class="container">
             <p>Connect with me:</p>
             <a href="mailto:micahbroussard07@gmail.com">Email</a> |
-            <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/MicahBroussard" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://github.com/MicahBroussard" target="_blank" rel="noopener noreferrer">GitHub</a>
             <p>Baton Rouge, LA | (337) 561-2387</p>
             <p>&copy; 2025 Micah Broussard. All rights reserved.</p>
         </div>
     </footer>
 
-    <button id="back-to-top" title="Back to top">↑</button>
+    <button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
 </body>
