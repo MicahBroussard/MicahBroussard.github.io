@@ -29,6 +29,13 @@ body {
 }
 
 /* Header/Hero Section */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid white;
+    object-fit: cover;
+}
 .hero {
     background-color: var(--primary-color);
     color: white;
