@@ -178,6 +178,88 @@ footer a:hover {
     color: var(--primary-color);
 }
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+#back-to-top:hover {
+    background-color: #003830;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger Menu */
+#hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+#hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+#hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Navigation adjustments */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 /* Media Queries for Responsiveness (Mobile View) */
 @media (max-width: 768px) {
     .skills-grid {
@@ -190,12 +272,49 @@ footer a:hover {
         max-width: 350px;
     }
 
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        z-index: 100;
+    }
+
+    nav.active {
+        max-height: 300px;
+    }
+
     nav a {
         display: block;
-        margin: 10px 0;
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+
+    .hero {
+        position: relative;
     }
 
     .hero h1 {
         font-size: 2em;
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 12px;
+        font-size: 16px;
     }
 }
