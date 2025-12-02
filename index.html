@@ -14,187 +14,389 @@
         <div class="bg-orb orb-3"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="logo">MB</div>
-            <div class="nav-links">
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+    <!-- Dashboard Container -->
+    <div class="dashboard">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-circle">MB</div>
+                <h3>MICAH<br/>BROUSSARD</h3>
             </div>
-        </div>
-    </nav>
+            
+            <nav class="nav-menu">
+                <a href="#overview" class="nav-item active">
+                    <span class="nav-icon">◉</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#skills" class="nav-item">
+                    <span class="nav-icon">⚡</span>
+                    <span>Skills</span>
+                </a>
+                <a href="#experience" class="nav-item">
+                    <span class="nav-icon">◈</span>
+                    <span>Experience</span>
+                </a>
+                <a href="#projects" class="nav-item">
+                    <span class="nav-icon">◆</span>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <span class="nav-icon">◇</span>
+                    <span>Contact</span>
+                </a>
+            </nav>
 
-    <div class="content">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="profile-pic-wrapper">
-                    <img src="images/profile.jpg" alt="Micah Broussard" class="profile-pic">
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span>ONLINE</span>
                 </div>
-                <h1>Micah Broussard</h1>
-                <p class="subtitle">Computer Science Student | Full-Stack Developer | Problem Solver</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="scroll-indicator"></div>
-        </section>
-
-        <!-- Education -->
-        <section id="education" class="fade-in">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>B.S. in Computer Science</h3>
-                    <p class="date">Louisiana State University | May 2027 | GPA: 3.78</p>
-                    <p>Advanced coursework in data structures, algorithms, systems programming, and object-oriented design</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="fade-in">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>HTML/CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools & Systems</h3>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Git & Version Control</li>
-                        <li>CAD</li>
-                        <li>Adobe Photoshop</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Core Skills</h3>
-                    <ul>
-                        <li>Debugging & Optimization</li>
-                        <li>Technical Support</li>
-                        <li>Problem Solving</li>
-                        <li>Full-Stack Development</li>
-                    </ul>
+                <div class="system-info">
+                    <div>BATON ROUGE, LA</div>
+                    <div id="current-time"></div>
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <!-- Experience -->
-        <section id="experience" class="fade-in">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Sales Associate</h3>
-                    <p class="date">Office Depot | June 2025 - Present</p>
-                    <ul>
-                        <li>Troubleshoot hardware/software issues for customers</li>
-                        <li>Provide technology consultation and solutions</li>
-                        <li>Consistently exceed sales goals</li>
-                    </ul>
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-content">
+            <!-- Header Bar -->
+            <header class="top-bar">
+                <div class="breadcrumb">
+                    <span>PORTFOLIO</span>
+                    <span class="separator">/</span>
+                    <span id="current-section">OVERVIEW</span>
                 </div>
-                <div class="timeline-item">
-                    <h3>Teaching Assistant</h3>
-                    <p class="date">Louisiana State University | Aug 2024 - May 2025</p>
-                    <ul>
-                        <li>Debugged and optimized student code across multiple languages</li>
-                        <li>Provided one-on-one instruction tailored to diverse learning styles</li>
-                        <li>Delivered actionable feedback to improve student performance</li>
-                    </ul>
+                <div class="top-actions">
+                    <a href="mailto:micahbroussard07@gmail.com" class="top-btn">
+                        <span>✉</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" class="top-btn">
+                        <span>in</span>
+                    </a>
+                    <a href="https://github.com/MicahBroussard" target="_blank" class="top-btn">
+                        <span>{ }</span>
+                    </a>
                 </div>
-                <div class="timeline-item">
-                    <h3>Online Sales Associate</h3>
-                    <p class="date">Phyll's Icing on the Cake | Sept 2019 - Present</p>
-                    <ul>
-                        <li>Manage client communications and specifications</li>
-                        <li>Coordinate logistics for order fulfillment</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            </header>
 
-        <!-- Projects -->
-        <section id="projects" class="fade-in">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>🏆 SASE Hackathon 2024</h3>
-                    <p>Built an interactive world map visualizing countries' alliances, conflicts, and currencies. Won 1st place with a working prototype delivered in 48 hours.</p>
-                    <div>
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">CSS</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MicahBroussard/GeauxHack24" target="_blank" rel="noopener noreferrer">GitHub →</a>
+            <!-- Overview Section -->
+            <section id="overview" class="section active">
+                <div class="section-header">
+                    <h1>SYSTEM OVERVIEW</h1>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Hero Panel -->
+                <div class="hero-panel panel">
+                    <div class="hero-grid">
+                        <div class="hero-left">
+                            <div class="profile-container">
+                                <img src="images/profile.jpg" alt="Micah Broussard" class="profile-pic">
+                                <div class="profile-ring"></div>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <div class="glitch-wrapper">
+                                <h2 class="hero-title">MICAH BROUSSARD</h2>
+                            </div>
+                            <p class="hero-subtitle">COMPUTER SCIENCE STUDENT</p>
+                            <div class="hero-tags">
+                                <span class="tag">FULL-STACK DEVELOPER</span>
+                                <span class="tag">PROBLEM SOLVER</span>
+                                <span class="tag">SYSTEMS ARCHITECT</span>
+                            </div>
+                            <div class="hero-buttons">
+                                <a href="#projects" class="dash-btn primary">VIEW PROJECTS</a>
+                                <a href="#contact" class="dash-btn secondary">CONTACT ME</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3>🎮 WICS Educational Game</h3>
-                    <p>Implemented backend systems and contributed to front-end for a browser-based educational game simulating small business operations.</p>
-                    <div>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MicahBroussard/WicsHackathon25" target="_blank" rel="noopener noreferrer">GitHub →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Honors -->
-        <section id="honors" class="fade-in">
-            <h2>Honors & Activities</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <h3>Honors</h3>
-                    <ul>
-                        <li>TOPS Recipient</li>
-                        <li>DELF Diploma</li>
-                        <li>AP Scholar</li>
-                    </ul>
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card panel">
+                        <div class="stat-icon">◉</div>
+                        <div class="stat-value">3.78</div>
+                        <div class="stat-label">GPA</div>
+                    </div>
+                    <div class="stat-card panel">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-value">2</div>
+                        <div class="stat-label">HACKATHONS WON</div>
+                    </div>
+                    <div class="stat-card panel">
+                        <div class="stat-icon">◆</div>
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">LANGUAGES</div>
+                    </div>
+                    <div class="stat-card panel">
+                        <div class="stat-icon">◈</div>
+                        <div class="stat-value">2027</div>
+                        <div class="stat-label">GRADUATION</div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>English (Fluent)</li>
-                        <li>French (Fluent)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Activities</h3>
-                    <ul>
-                        <li>National Society of Black Engineers</li>
-                        <li>Google Developer Student Club</li>
-                        <li>Robotics Team 3616 Mentor</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- Contact -->
-        <footer id="contact">
-            <h2>Let's Connect</h2>
-            <div class="social-links">
-                <a href="mailto:micahbroussard07@gmail.com" title="Email">✉</a>
-                <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" title="LinkedIn">in</a>
-                <a href="https://github.com/MicahBroussard" target="_blank" title="GitHub">{ }</a>
-            </div>
-            <p>Baton Rouge, LA | (337) 561-2387</p>
-            <p style="margin-top: 2rem; color: var(--text-muted);">© 2025 Micah Broussard. All rights reserved.</p>
-        </footer>
+                <!-- Education Panel -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>EDUCATION</h3>
+                        <span class="panel-tag">CURRENT</span>
+                    </div>
+                    <div class="education-content">
+                        <h4>B.S. IN COMPUTER SCIENCE</h4>
+                        <p class="edu-location">Louisiana State University | May 2027</p>
+                        <p class="edu-details">Advanced coursework in data structures, algorithms, systems programming, and object-oriented design</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="section-header">
+                    <h1>TECHNICAL CAPABILITIES</h1>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-dashboard">
+                    <div class="skill-panel panel">
+                        <div class="panel-header">
+                            <h3>PROGRAMMING LANGUAGES</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS/JS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-panel panel">
+                        <div class="panel-header">
+                            <h3>TOOLS & SYSTEMS</h3>
+                        </div>
+                        <div class="tool-grid">
+                            <div class="tool-chip">Linux</div>
+                            <div class="tool-chip">Git</div>
+                            <div class="tool-chip">CAD</div>
+                            <div class="tool-chip">Photoshop</div>
+                            <div class="tool-chip">Excel</div>
+                            <div class="tool-chip">Windows</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-panel panel">
+                        <div class="panel-header">
+                            <h3>CORE COMPETENCIES</h3>
+                        </div>
+                        <div class="competency-list">
+                            <div class="competency-item">▹ Debugging & Optimization</div>
+                            <div class="competency-item">▹ Technical Support</div>
+                            <div class="competency-item">▹ Problem Solving</div>
+                            <div class="competency-item">▹ Full-Stack Development</div>
+                            <div class="competency-item">▹ Algorithm Design</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div class="section-header">
+                    <h1>WORK EXPERIENCE</h1>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="exp-card panel">
+                        <div class="exp-header">
+                            <div>
+                                <h3>TEACHING ASSISTANT</h3>
+                                <p class="exp-company">Louisiana State University</p>
+                            </div>
+                            <span class="exp-date">AUG 2024 - MAY 2025</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Debugged and optimized student code across multiple languages</li>
+                            <li>Provided one-on-one instruction tailored to diverse learning styles</li>
+                            <li>Delivered actionable feedback to improve student performance</li>
+                        </ul>
+                        <div class="exp-status active">ACTIVE</div>
+                    </div>
+
+                    <div class="exp-card panel">
+                        <div class="exp-header">
+                            <div>
+                                <h3>SALES ASSOCIATE</h3>
+                                <p class="exp-company">Office Depot</p>
+                            </div>
+                            <span class="exp-date">JUNE 2025 - PRESENT</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Troubleshoot hardware/software issues for customers</li>
+                            <li>Provide technology consultation and solutions</li>
+                            <li>Consistently exceed sales goals</li>
+                        </ul>
+                        <div class="exp-status active">ACTIVE</div>
+                    </div>
+
+                    <div class="exp-card panel">
+                        <div class="exp-header">
+                            <div>
+                                <h3>ONLINE SALES ASSOCIATE</h3>
+                                <p class="exp-company">Phyll's Icing on the Cake</p>
+                            </div>
+                            <span class="exp-date">SEPT 2019 - PRESENT</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Manage client communications and specifications</li>
+                            <li>Coordinate logistics for order fulfillment</li>
+                        </ul>
+                        <div class="exp-status active">ACTIVE</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h1>FEATURED PROJECTS</h1>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-panel panel featured">
+                        <div class="project-badge">🏆 1ST PLACE</div>
+                        <h3>SASE HACKATHON 2024</h3>
+                        <p class="project-desc">Built an interactive world map visualizing countries' alliances, conflicts, and currencies. Won 1st place with a working prototype delivered in 48 hours.</p>
+                        <div class="tech-stack">
+                            <span class="tech-chip">HTML</span>
+                            <span class="tech-chip">CSS</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/MicahBroussard/GeauxHack24" target="_blank" class="project-link">
+                                VIEW CODE →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-panel panel">
+                        <div class="project-badge">🎮 EDUCATIONAL</div>
+                        <h3>WICS HACKATHON 2025</h3>
+                        <p class="project-desc">Implemented backend systems and contributed to front-end for a browser-based educational game simulating small business operations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Node.js</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/MicahBroussard/WicsHackathon25" target="_blank" class="project-link">
+                                VIEW CODE →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="section-header">
+                    <h1>ESTABLISH CONNECTION</h1>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-panel panel">
+                        <div class="panel-header">
+                            <h3>CONTACT INFORMATION</h3>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-label">EMAIL</span>
+                                <a href="mailto:micahbroussard07@gmail.com">micahbroussard07@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">PHONE</span>
+                                <span>(337) 561-2387</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">LOCATION</span>
+                                <span>Baton Rouge, Louisiana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-panel panel">
+                        <div class="panel-header">
+                            <h3>SOCIAL NETWORKS</h3>
+                        </div>
+                        <div class="social-grid">
+                            <a href="mailto:micahbroussard07@gmail.com" class="social-card">
+                                <div class="social-icon">✉</div>
+                                <div class="social-label">Email</div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/micah-broussard-11952629b" target="_blank" class="social-card">
+                                <div class="social-icon">in</div>
+                                <div class="social-label">LinkedIn</div>
+                            </a>
+                            <a href="https://github.com/MicahBroussard" target="_blank" class="social-card">
+                                <div class="social-icon">{ }</div>
+                                <div class="social-label">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-panel panel">
+                        <div class="panel-header">
+                            <h3>HONORS & ACTIVITIES</h3>
+                        </div>
+                        <div class="honors-list">
+                            <div class="honor-item">◆ TOPS Recipient</div>
+                            <div class="honor-item">◆ DELF Diploma</div>
+                            <div class="honor-item">◆ AP Scholar</div>
+                            <div class="honor-item">◆ National Society of Black Engineers</div>
+                            <div class="honor-item">◆ Google Developer Student Club</div>
+                            <div class="honor-item">◆ Robotics Team 3616 Mentor</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="dashboard-footer">
+                <div class="footer-content">
+                    <p>© 2025 MICAH BROUSSARD. ALL RIGHTS RESERVED.</p>
+                    <p class="footer-secondary">PORTFOLIO v2.0 | SYSTEM OPERATIONAL</p>
+                </div>
+            </footer>
+        </main>
     </div>
 
     <script src="script.js"></script>
